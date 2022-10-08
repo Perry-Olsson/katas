@@ -16,6 +16,8 @@ class Solution:
         return str(num)
 
 def main():
-    print("hello")
+    solution = Solution()
+    val = solution.fizz_buzz(10)
+    print(val)
 
 main()

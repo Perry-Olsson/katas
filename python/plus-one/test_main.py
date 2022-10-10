@@ -10,7 +10,7 @@ solution = Solution()
     ([9], [1, 0])
     ])
 def test_it_adds_one_to_single_digit_number(input, expected):
-    actual = solution.plus_one(input)
+    actual = solution.plusOne(input)
     assert expected == actual
 
 @pytest.mark.parametrize("input,expected", [
@@ -20,7 +20,7 @@ def test_it_adds_one_to_single_digit_number(input, expected):
     ([9, 9], [1, 0, 0])
     ])
 def test_it_adds_one_to_double_digit_number(input, expected):
-    actual = solution.plus_one(input)
+    actual = solution.plusOne(input)
     assert expected == actual
 
 @pytest.mark.parametrize("input,expected", [
@@ -30,7 +30,7 @@ def test_it_adds_one_to_double_digit_number(input, expected):
     ([9, 9, 9], [1, 0, 0, 0]),
     ])
 def test_it_adds_one_to_triple_digit_number(input, expected):
-    actual = solution.plus_one(input)
+    actual = solution.plusOne(input)
     assert expected == actual
 
 @pytest.mark.parametrize("input,expected", [
@@ -38,5 +38,5 @@ def test_it_adds_one_to_triple_digit_number(input, expected):
     ([9, 9, 9, 9, 9, 9, 9, 9, 9], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
     ])
 def test_it_adds_one_to_large_number(input, expected):
-    actual = solution.plus_one(input)
+    actual = solution.plusOne(input)
     assert expected == actual

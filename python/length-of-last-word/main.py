@@ -1,6 +1,6 @@
 class Solution:
     def find_length_of_last_word(self, input: str) -> int:
-        return self._find_length_of_last_word_alternate(input)
+        return self._find_length_of_last_word_functional(input)
 
     def _find_length_of_last_word(self, input: str) -> int:
         length_of_last_word = 0
@@ -36,3 +36,5 @@ class Solution:
 
         return index_of_last_char - index
 
+    def _find_length_of_last_word_functional(self, input: str) -> int:
+        return len(input.strip().split()[-1])

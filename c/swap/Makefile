@@ -1,12 +1,12 @@
-.PHONY: run rr clean
+.PHONY: test clean
 
-main: main.c
-	gcc -o main main.c
+main: tests.c main.o
+	gcc -o main tests.c main.o
 
-run:
-	./main
+main.o: main.c main.h
+	gcc -c main.c
 
-rr: main
+test: main
 	./main
 	
 clean:
